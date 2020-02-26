@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <title>(Beta)Marek sází brambory na D1</title>
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+
+    <div class="column">
+        <a class="button" href="menu.html"><b>&#x2190; Zpět do menu</b>
+        </a>
+        <div class="row">
+            <div class="column center">
+                <div class="row center">
+                    <p>Brambory:</p>
+                    <p id="potatoes">0</p>
+                    <p>Ks</p>
+                </div>
+                <div class="row center">
+                    <p>Semena:</p>
+                    <p id="seeds">0</p>
+                    <p>Ks</p>
+                </div>
+            </div>
+
+            <ul class="elements row center">
+                <li id="plant" title="Zasaď!" class="column actionButton">
+                    <img class="icon" src="plant.png">
+                    <p>Zasaď!</p>
+                </li>
+                <li id="water" title="Zalij!" class="column actionButton">
+                    <img class="icon" src="water.png">
+                    <p>Zalij!</p>
+                </li>
+                <li id="fertilize" title="Pohnoj!!" class="column actionButton">
+                    <img class="icon" src="fertilize.png">
+                    <p>Pohnoj!</p>
+                </li>
+                <li id="reap" title="Skliď!" class="column actionButton">
+                    <img class="icon" src="reap.png">
+                    <p>Skliď!</p>
+                </li>
+                <li id="explosion" title="Odbouchni!" class="column actionButton">
+                    <img class="icon" src="explosion.png">
+                    <p>Odbouchni!</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@svgdotjs/svg.js@3.0/dist/svg.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="storage.js"></script>
+    <script src="game.js"></script>
+
+</body>
+
+</html>

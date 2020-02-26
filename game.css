@@ -1,0 +1,13 @@
+.actionButton{
+    margin: 1em;
+    width: 10em;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3em;
+}
+.actionButton:hover{
+    background-color: rgb(61, 58, 58);
+}
+.icon{
+    width: 2em;
+  }

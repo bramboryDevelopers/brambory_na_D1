@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <title>(Beta)Marek sází brambory na D1</title>
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="intro.css">
+</head>
+
+<body>
+    <div class="cloumn center">
+        <ul class="elements column center">
+            <li>
+                <div class="row">
+                    <h3><b>MAREK ŠKOŘEPA</b></h3>
+                    <img class="icon" src="potatoe.png">
+                </div>
+            </li>
+            <li>
+                <div class="row">
+                    <h3><b>LUKÁŠ DRLÍK</b></h3>
+                    <img class="icon" src="car_blue.png">
+                </div>
+            </li>
+            <li>
+                <div class="row">
+                    <h3><b>STEPHAN KIBARDIN</b></h3>
+                    <img class="icon" src="road.png">
+                </div>
+            </li>
+
+        </ul>
+        <img src="Intro.png">
+        <h1>Marek sází brambory na D1</h1>
+        <nav class="row center">
+            <button id="play" class="button"><b>Hrát</b></button>
+            <a class="button" href="about.html"><b>O hře</b></a>
+        </nav>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+        $(document).on("click", "#play", e => {
+            e.preventDefault()
+            let audio = new Audio('intro.mp3');
+            audio.play();
+            setTimeout(e => {
+                window.open("menu.html", "_parent")
+            }, 5000);
+        });
+
+    </script>
+</body>
+
+</html>

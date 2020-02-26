@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <title>(Beta) Marek sází brambory na D1</title>
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="column">
+
+        <ul class="column elements">
+
+            <li class="row center">
+                <p>Brambory:</p>
+                <p id="potatoes">0</p>
+                <p>Ks</p>
+            </li>
+
+            <li class="row center">
+                <p>Hranolky:</p>
+                <p id="frites">0</p>
+                <p>Ks</p>
+            </li>
+
+            <li class="row center">
+                <p>Bramboračka:</p>
+                <p id="soup">0</p>
+                <p>Ks</p>
+            </li>
+
+            <li class="row center">
+                <p>Semena:</p>
+                <p id="seeds">0</p>
+                <p>Ks</p>
+            </li>            
+
+            <li class="row center">
+                <p>Peníze:</p>
+                <p id="money">0</p>
+                <p>Kč</p>
+            </li>
+
+
+        </ul>
+
+        <ul class="column elements">
+
+
+            <li class="line">
+                <form class="row center" id="make">
+                    <label>Vyrobit
+                        <select id="make_option">
+                            <option>Hranoky</option>
+                            <option>Bramoračka</option>
+                        </select>
+                        Počet:
+                        <input id="make_input" type="number"></label>
+                    <button title="Vyrobit" class="button" type="submit">Vyrobit</button>
+                </form>
+            </li>
+
+            <li class="line">
+                <form class="row center" id="sell">
+                    <label>Prodat
+                        <select id="sell_option">
+                            <option>Hranoky</option>
+                            <option>Bramoračka</option>
+                            <option>Brambory</option>
+                        </select>
+                        Počet:
+                        <input id="sell_input" type="number"></label>
+                    <button title="Prodat" class="button" type="submit">Prodat</button>
+                </form>
+            </li>
+            <li class="line">
+                <form class="row center" id="buy">
+                    <label>Koupit
+                        <select id="buy_option">
+                            <option>Semena</option>
+                        </select>
+                        Počet:
+                        <input id="buy_input" type="number"></label>
+                    <button title="Koupit" class="button" type="submit">Koupit</button>
+                </form>
+            </li>
+        </ul>
+        <ul class="row elements">
+            <li><a class="button" href="game.html">Hra</a></li>
+        </ul>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="storage.js"></script>
+    <script src="menu.js"></script>
+
+</body>
+
+</html>

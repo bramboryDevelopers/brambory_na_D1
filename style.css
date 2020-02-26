@@ -1,0 +1,40 @@
+html {
+  background-color: black;
+  padding: 1em;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+}
+.column{
+  display: flex;
+  flex-direction: column;
+}
+.center{
+  text-align: center;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+}
+.elements{
+  list-style: none;
+}
+.line{
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.button{
+  all: unset;
+  background-color: gray;
+  padding: 0.25em;
+  border-radius: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.button:hover{
+  background-color: rgb(168, 168, 168);
+}
